@@ -6,16 +6,13 @@ import { ModalModule } from 'ngx-modialog-7';
 import { InnerRuntimeCompiledComponent }   from './inner-runtime-compiled.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ModalModule
-  ],
-  declarations: [
-    InnerRuntimeCompiledComponent
-  ],
-  entryComponents: [
-    InnerRuntimeCompiledComponent
-  ],
+    imports: [
+        CommonModule,
+        ModalModule
+    ],
+    declarations: [
+        InnerRuntimeCompiledComponent
+    ]
 })
 export class InnerRuntimeCompiledModule {
 

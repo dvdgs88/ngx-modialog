@@ -3,11 +3,6 @@
   "dest": "../../../dist/ngx-modialog-7/plugins/js-native",
   "deleteDestPath": false,
   "lib": {
-    "entryFile": "src/public_api.ts",
-    "amdId": "ngxModialog.plugins.jsNative",
-    "umdId": "ngxModialog.plugins.jsNative",
-    "umdModuleIds": {
-      "ngx-modialog-7": "ngxModialog"
-    }
+    "entryFile": "src/public_api.ts"
   }
 }

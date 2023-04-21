@@ -3,11 +3,6 @@
   "dest": "../../../dist/ngx-modialog-7/plugins/vex",
   "deleteDestPath": false,
   "lib": {
-    "entryFile": "src/public_api.ts",
-    "amdId": "ngxModialog.plugins.vex",
-    "umdId": "ngxModialog.plugins.vex",
-    "umdModuleIds": {
-      "ngx-modialog-7": "ngxModialog"
-    }
+    "entryFile": "src/public_api.ts"
   }
 }

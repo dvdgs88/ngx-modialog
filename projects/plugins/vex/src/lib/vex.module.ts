@@ -13,19 +13,14 @@ export const providers: any[] = [
 ];
 
 @NgModule({
-  imports: [ ModalModule, CommonModule ],
-  declarations: [
-    VexCSSDialogContainer,
-    VEXDialogButtons,
-    FormDropIn,
-    DialogFormModal
-  ],
-  providers,
-  entryComponents: [
-    VexCSSDialogContainer,
-    DialogFormModal,
-    FormDropIn
-  ]
+    imports: [ModalModule, CommonModule],
+    declarations: [
+        VexCSSDialogContainer,
+        VEXDialogButtons,
+        FormDropIn,
+        DialogFormModal
+    ],
+    providers
 })
 export class VexModalModule {
 

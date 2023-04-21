@@ -3,8 +3,6 @@
   "dest": "../../dist/ngx-modialog-7",
   "deleteDestPath": true,
   "lib": {
-    "entryFile": "src/public_api.ts",
-    "amdId": "ngxModialog",
-    "umdId": "ngxModialog"
+    "entryFile": "src/public_api.ts"
   }
 }

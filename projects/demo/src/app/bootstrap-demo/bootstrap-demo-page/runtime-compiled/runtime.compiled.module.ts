@@ -7,17 +7,14 @@ import { BootstrapModalModule } from 'ngx-modialog-7/plugins/bootstrap';
 import { RuntimeCompiledComponent }   from './runtime-compiled.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ModalModule,
-    BootstrapModalModule
-  ],
-  declarations: [
-    RuntimeCompiledComponent
-  ],
-  entryComponents: [
-    RuntimeCompiledComponent
-  ],
+    imports: [
+        CommonModule,
+        ModalModule,
+        BootstrapModalModule
+    ],
+    declarations: [
+        RuntimeCompiledComponent
+    ]
 })
 export class RuntimeCompiledModule {
 

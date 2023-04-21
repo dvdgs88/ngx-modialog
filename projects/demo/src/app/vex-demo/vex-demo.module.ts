@@ -10,8 +10,7 @@ import { VexDemo } from './vex-demo';
 import { LoginDialog } from './login-dialog';
 
 @NgModule({
-  imports: [ FormsModule, CommonModule, VexModalModule, routing, SharedModule ],
-  declarations: [ VexDemo, LoginDialog ],
-  entryComponents: [ LoginDialog ]
+    imports: [FormsModule, CommonModule, VexModalModule, routing, SharedModule],
+    declarations: [VexDemo, LoginDialog]
 })
 export class VexDemoModule { }

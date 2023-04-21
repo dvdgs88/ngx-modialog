@@ -13,28 +13,23 @@ import {
 } from './overlay/index';
 
 @NgModule({
-  declarations: [
-    ModalOverlay,
-    CSSBackdrop,
-    CSSDialogContainer,
-    OverlayDialogBoundary,
-    OverlayTarget
-  ],
-  imports: [CommonModule],
-  exports: [
-    CSSBackdrop,
-    CSSDialogContainer,
-    OverlayDialogBoundary,
-    OverlayTarget
-  ],
-  providers: [
-    Overlay
-  ],
-  entryComponents: [
-    ModalOverlay,
-    CSSBackdrop,
-    CSSDialogContainer
-  ]
+    declarations: [
+        ModalOverlay,
+        CSSBackdrop,
+        CSSDialogContainer,
+        OverlayDialogBoundary,
+        OverlayTarget
+    ],
+    imports: [CommonModule],
+    exports: [
+        CSSBackdrop,
+        CSSDialogContainer,
+        OverlayDialogBoundary,
+        OverlayTarget
+    ],
+    providers: [
+        Overlay
+    ]
 })
 export class ModalModule {
 

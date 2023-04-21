@@ -17,14 +17,11 @@ export function getProviders(): any[] {
 }
 
 @NgModule({
-  imports: [ CommonModule ],
-  declarations: [
-    InAppModalBackdrop
-  ],
-  providers: getProviders(),
-  entryComponents: [
-    InAppModalBackdrop
-  ]
+    imports: [CommonModule],
+    declarations: [
+        InAppModalBackdrop
+    ],
+    providers: getProviders()
 })
 export class InAppModalModule {
 

@@ -18,19 +18,15 @@ export const providers: any[] = [
 ];
 
 @NgModule({
-  imports: [ ModalModule, CommonModule ],
-  declarations: [
-    BSModalFooter,
-    BSMessageModalTitle,
-    BSMessageModalBody,
-    BSMessageModal,
-    BSModalContainer
-  ],
-  providers,
-  entryComponents: [
-    BSModalContainer,
-    BSMessageModal
-  ]
+    imports: [ModalModule, CommonModule],
+    declarations: [
+        BSModalFooter,
+        BSMessageModalTitle,
+        BSMessageModalBody,
+        BSMessageModal,
+        BSModalContainer
+    ],
+    providers
 })
 export class BootstrapModalModule {
   static getProviders(): any[] {

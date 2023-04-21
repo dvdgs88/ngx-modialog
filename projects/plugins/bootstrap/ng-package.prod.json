@@ -3,11 +3,6 @@
   "dest": "../../../dist/ngx-modialog-7/plugins/bootstrap",
   "deleteDestPath": false,
   "lib": {
-    "entryFile": "src/public_api.ts",
-    "amdId": "ngxModialog.plugins.bootstrap",
-    "umdId": "ngxModialog.plugins.bootstrap",
-    "umdModuleIds": {
-      "ngx-modialog-7": "ngxModialog"
-    }
+    "entryFile": "src/public_api.ts"
   }
 }
