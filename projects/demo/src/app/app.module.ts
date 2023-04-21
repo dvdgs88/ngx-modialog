@@ -18,7 +18,7 @@ import { InAppModalModule } from './home/in-app-plugin/index';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(routes, { useHash: true, preloadingStrategy: PreloadAllModules }),
+    RouterModule.forRoot(routes, { useHash: true, preloadingStrategy: PreloadAllModules, relativeLinkResolution: 'legacy' }),
     SharedModule.forRoot(),
     ModalModule.forRoot(),
     VexDemoModule,
