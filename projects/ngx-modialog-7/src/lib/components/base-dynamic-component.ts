@@ -2,6 +2,7 @@ import { Observable, Subject } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import {
   ComponentRef,
+  Directive,
   ElementRef,
   OnDestroy,
   Renderer2
@@ -34,6 +35,7 @@ function register(eventName, element, cb) {
  * Capabilities: Add/Remove styls, Add/Remove classes, listen to animation/transition end event,
  * add components
  */
+@Directive()
 export class BaseDynamicComponent implements OnDestroy {
   animationEnd$: Observable<TransitionEvent | AnimationEvent>;
 
