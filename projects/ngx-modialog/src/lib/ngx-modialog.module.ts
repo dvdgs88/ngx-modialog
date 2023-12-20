@@ -1,4 +1,4 @@
-import { ANALYZE_FOR_ENTRY_COMPONENTS, NgModule, ModuleWithProviders, Type } from '@angular/core';
+import { NgModule, ModuleWithProviders, Type } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EVENT_MANAGER_PLUGINS } from '@angular/platform-browser';
 
@@ -52,11 +52,10 @@ export class ModalModule {
    * using entryComponents, this is an easy way to do it.
    * @param entryComponents A list of dynamically inserted components (dialog's).
    */
-  static withComponents(entryComponents: Array<Type<any> | any[]>): ModuleWithProviders<ModalModule> {
+  static withComponents(): ModuleWithProviders<ModalModule> {
     return {
       ngModule: ModalModule,
       providers: [
-        {provide: ANALYZE_FOR_ENTRY_COMPONENTS, useValue: entryComponents, multi: true},
         { provide: Modal, useClass: Modal }
       ]
     };
@@ -66,13 +65,12 @@ export class ModalModule {
    * Returns a NgModule for use in the root Module.
    * @param entryComponents A list of dynamically inserted components (dialog's).
    */
-  static forRoot(entryComponents?: Array<Type<any> | any[]>): ModuleWithProviders<ModalModule> {
+  static forRoot(): ModuleWithProviders<ModalModule> {
     return {
       ngModule: ModalModule,
       providers: [
         {provide: OverlayRenderer, useClass: DOMOverlayRenderer},
         {provide: EVENT_MANAGER_PLUGINS, useClass: DOMOutsideEventPlugin, multi: true},
-        {provide: ANALYZE_FOR_ENTRY_COMPONENTS, useValue: entryComponents || [], multi: true},
         { provide: Modal, useClass: Modal }
       ]
     };

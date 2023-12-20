@@ -1,5 +1,3 @@
-import { ResolvedReflectiveProvider } from '@angular/core';
-
 import { FluentAssignMethod } from '../framework/fluent-assign';
 import { ModalComponent, OverlayConfig, WideVCRef } from './tokens';
 import { Modal } from '../providers/index';
