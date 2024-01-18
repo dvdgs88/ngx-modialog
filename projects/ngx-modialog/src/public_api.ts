@@ -4,7 +4,7 @@
 import { Modal } from './lib/providers/index';
 
 export * from './lib/framework/fluent-assign';
-export { extend, arrayUnion, PromiseCompleter, Class} from './lib/framework/utils';
+export { extend, arrayUnion, PromiseCompleter, Class } from './lib/framework/utils';
 export { createComponent, CreateComponentArgs } from './lib/framework/createComponent';
 
 export * from './lib/models/errors';
