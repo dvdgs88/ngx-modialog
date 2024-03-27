@@ -3,11 +3,11 @@
   "version": "17.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/4sellers/ngx-modialog.git"
+    "url": "https://github.com/dvdgs88/ngx-modialog.git"
   },
-  "author": "4Sellers",
+  "author": "dvdgs88",
   "license": "MIT",
-  "homepage": "https://github.com/4sellers/ngx-modialog",
+  "homepage": "https://github.com/dvdgs88/ngx-modialog",
   "dependencies": {
     "tslib": "^2.3.0"
   },
