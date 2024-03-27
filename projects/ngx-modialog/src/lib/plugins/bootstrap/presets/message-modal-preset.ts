@@ -116,7 +116,7 @@ export abstract class MessageModalPresetBuilder<T extends MessageModalPreset>
    * aliased by 'body'
    * @aliasedBy body
    */
-  message: FluentAssignMethod<string, this>;
+  declare message: FluentAssignMethod<string, this>;
 
   /**
    * The body of the modal.

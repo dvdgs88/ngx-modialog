@@ -28,7 +28,7 @@ export class DropInPreset extends DialogPreset {
   /**
    * the message to display on the modal.
    */
-  message: string;
+  declare message: string;
 
   /**
    * OK button caption.
@@ -65,7 +65,7 @@ export class DropInPresetBuilder extends DialogPresetBuilder<DropInPreset> {
   /**
    * the message to display on the modal.
    */
-  message: FluentAssignMethod<string, this>;
+  declare message: FluentAssignMethod<string, this>;
 
   /**
    * The default Ok button caption.
