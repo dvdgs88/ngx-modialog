@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders, Type } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EVENT_MANAGER_PLUGINS } from '@angular/platform-browser';
 

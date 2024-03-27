@@ -48,6 +48,7 @@ export { ModalOpenContext, ModalOpenContextBuilder } from './lib/models/modal-op
 export * from './lib/components/index';
 
 export { ModalModule } from './lib/ngx-modialog.module';
+export { VexModalModule } from './lib/vex-modal.module';
 
 export { BootstrapModalSize, BSModalContext, BSModalContextBuilder } from './lib/plugins/bootstrap/modal-context';
 export { BSModalContainer } from './lib/plugins/bootstrap/modal-container.component';
@@ -72,3 +73,16 @@ export {
   PromptPreset,
   PromptPresetBuilder
 } from './lib/plugins/bootstrap/presets/two-button-preset';
+
+export { Modal as VexModal, vexV3Mode } from './lib/plugins/vex/modal';
+export { VEXBuiltInThemes, VEXModalContext, VEXModalContextBuilder } from './lib/plugins/vex/modal-context';
+export { DropInPreset, DropInPresetBuilder } from './lib/plugins/vex/presets/dropin-preset';
+export {
+  DialogFormModal,
+  FormDropIn,
+  VEXButtonClickEvent,
+  VEXButtonConfig,
+  VEXButtonHandler,
+  VEXDialogButtons
+} from './lib/plugins/vex/dialog-form-modal';
+export { DialogPreset, DialogPresetBuilder } from './lib/plugins/vex/presets/dialog-preset';

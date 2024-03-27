@@ -9,6 +9,7 @@ import { OneButtonPresetBuilder } from '../plugins/bootstrap/presets/one-button-
 import { PromptPresetBuilder, TwoButtonPresetBuilder } from '../plugins/bootstrap/presets/two-button-preset';
 import { CSSBackdrop } from '../components/css-backdrop';
 import { BSModalContainer } from '../plugins/bootstrap/modal-container.component';
+import { DropInPresetBuilder } from '../../public_api';
 
 // TODO: use DI factory for this.
 // TODO: consolidate dup code
@@ -16,21 +17,23 @@ const isDoc: boolean = !(typeof document === 'undefined' || !document);
 
 let animationClass = 'in';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class Modal {
   constructor(public overlay: Overlay) {
   }
 
 
-  alert(): OneButtonPresetBuilder {
+  alert(): OneButtonPresetBuilder| DropInPresetBuilder {
     return new OneButtonPresetBuilder(this, <any>{isBlocking: false});
   }
 
-  prompt(): PromptPresetBuilder {
+  prompt(): PromptPresetBuilder | DropInPresetBuilder {
     return new PromptPresetBuilder(this, <any>{isBlocking: true, keyboard: null});
   }
 
-  confirm(): TwoButtonPresetBuilder {
+  confirm(): TwoButtonPresetBuilder | DropInPresetBuilder {
     return new TwoButtonPresetBuilder(this, <any>{isBlocking: true, keyboard: null});
   }
 

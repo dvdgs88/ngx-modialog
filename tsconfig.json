@@ -4,11 +4,6 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "paths": {
-      "ngx-modialog": [
-        "dist/ngx-modialog"
-      ]
-    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
@@ -16,9 +11,6 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"],
   }
 }
